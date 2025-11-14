@@ -126,12 +126,32 @@ The application uses SQLite by default. The database file (`db.sqlite3`) will be
 
 Access the Django admin at `/admin/` using the superuser credentials created in step 5. You can manage tasks directly from the admin panel.
 
+## CI/CD Pipeline
+
+This project includes GitHub Actions workflows for continuous integration and deployment:
+
+- **Automatic testing** on every push and pull request
+- **Runs on PR merge** - Automatically validates code when a PR is merged
+- **Code quality checks** - Linting and formatting validation
+- **Migration checks** - Ensures database migrations are up to date
+- **Test coverage** - Generates coverage reports
+- **Security scanning** - Checks for security vulnerabilities
+
+### Workflow Files
+
+- `.github/workflows/main.yml` - Main CI/CD pipeline (runs on PR merge)
+- `.github/workflows/ci.yml` - Comprehensive CI with security checks
+- `.github/workflows/pr-merge.yml` - PR merge specific validations
+
+See [.github/workflows/README.md](.github/workflows/README.md) for detailed documentation.
+
 ## Technologies Used
 
 - **Django 4.2+** - Web framework
 - **Bootstrap 5** - Frontend CSS framework
 - **SQLite** - Database
 - **Bootstrap Icons** - Icon library
+- **GitHub Actions** - CI/CD pipeline
 
 ## License
 
