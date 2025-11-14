@@ -6,7 +6,6 @@ A fully functional To-Do management system built with Django and Bootstrap 5.
 
 - ✅ Create, read, update, and delete tasks
 - ✅ Mark tasks as completed/pending
-- ✅ Beautiful, responsive UI with Bootstrap 5
 - ✅ Task descriptions (optional)
 - ✅ Automatic timestamps
 - ✅ Django admin interface
